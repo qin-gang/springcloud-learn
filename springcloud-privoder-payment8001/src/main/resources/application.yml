@@ -1,0 +1,21 @@
+server:
+  port: 8001
+
+
+
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+#配置mybatis
+mybatis:
+  #设置别名
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.nuc.springcloud.entiy
+  configuration:
+    map-underscore-to-camel-case: true #开启这个的作用是可以让数据库中的p_Addr与pojo中的pAddr对应

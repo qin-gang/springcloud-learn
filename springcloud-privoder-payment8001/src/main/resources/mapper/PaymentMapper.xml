@@ -6,10 +6,9 @@
         insert into payment(serial) values(#{serial});
     </insert>
 
-
     <resultMap id="BaseResultMap" type="com.nuc.springcloud.entiy.Payment">
         <id column="id" property="id" javaType="int"></id>
-        <id column="serial" property="serial" javaType="string"/>
+        <result column="serial" property="serial" javaType="string"/>
     </resultMap>
 
     <select id="getPaymentById" parameterType="Long" resultMap="BaseResultMap">

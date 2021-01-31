@@ -13,6 +13,10 @@
     <module>cloud-eureka-server7001</module>
     <module>cloud-eureka-server7002</module>
     <module>springcloud-privoder-payment8002</module>
+    <module>springcloud-privoder-payment8004</module>
+    <module>cloud-consumerzk-order80</module>
+    <module>cloud-provider-consulpayment8006</module>
+    <module>cloud-consumerconsul-order80</module>
   </modules>
   <packaging>pom</packaging>
 
